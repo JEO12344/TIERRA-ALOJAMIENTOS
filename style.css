@@ -1,0 +1,282 @@
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    height: 177px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.carousel-item p {
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+}
+
+a p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.d-block {
+    height: 393px;
+}
+
+.carousel.slide.carousel-fade {
+    display: flex;
+    justify-content: center;
+    margin-top: 57px;
+    margin-bottom: 100p
+}
+
+.carousel-inner {
+    width: 981px;
+}
+
+.carousel-inner img {
+    height: 421px;
+}
+
+
+
+
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+.departamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.carrusel-departamentos {
+    display: flex;
+    align-items: center;
+    height: 430px;
+}
+
+
+.carrusel-departamentos img {
+    height: 396px;
+    width: 167px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.carrusel-departamentos img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.servicios {
+    width: 839px;
+    height: 78px;
+}
+
+button {
+    background-color: black;
+
+}
+
+/*informción turistica*/
+.información {
+    width: 1098px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.fondo-imagen {
+    position: relative;
+    /* Para que el z-index funcione correctamente en el contenido */
+    background-image: url('../imagenes/información turistica/salta-plaza-9-julio-1536x1061.webp');
+    background-size: contain;
+    background-position: center;
+    color: white;
+    /* Color del texto */
+    padding: 50px;
+    /* Espaciado alrededor del contenido */
+    text-align: center;
+    min-height: 200px;
+    /* Establece una altura mínima para el contenedor */
+}
+
+.fondo-imagen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    z-index: -1;
+    /* Coloca la capa detrás del contenido */
+}
+
+.fondo-imagen-1 {
+    position: relative;
+    /* Para que el z-index funcione correctamente en el contenido */
+    background-image: url('./imagenes/información turistica/marron.webp');
+    background-size: 374px;
+    background-position: center;
+    color: white;
+    /* Color del texto */
+    padding: 50px;
+    /* Espaciado alrededor del contenido */
+    text-align: center;
+    min-height: 200px;
+    /* Establece una altura mínima para el contenedor */
+}
+
+.fondo-imagen-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    z-index: -1;
+    /* Coloca la capa detrás del contenido */
+}
+
+.fondo-imagen-1 h2 {
+    font-size: 4em;
+    margin-top: 29px;
+    color: white;
+}
+
+.fondo-imagen h2 {
+    font-size: 4em;
+    /* Tamaño de la fuente del encabezado */
+    margin-top: 29px;
+    /* Espaciado inferior del encabezado */
+    color: white;
+}
+
+.información p {
+    font-size: larger;
+}
+
+.información img {
+    width: 100%;
+    /* Ocupa el ancho completo del contenedor */
+    max-width: 400px;
+    /* Establece un ancho máximo para la imagen (ajusta según tus necesidades) */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente */
+    display: block;
+    margin: 0 auto;
+    /* Centra la imagen dentro del contenedor */
+
+}
+
+
+
+/* quienes somos*/
+
+
+.presentación {
+    width: 1098px;
+    /* Puedes ajustar el ancho según tus necesidades */
+    margin: 0 auto;
+    /* Esto centra el div horizontalmente */
+    text-align: center;
+    /* Esto centra el texto dentro del div */
+    padding: 20px;
+    /* Añade espacio interno al div */
+}
+
+.presentación h1 p {
+    font-size: 16px;
+    text-align: justify;
+    text-align: left;
+}
+
+.premios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.premios img {
+    height: 139px;
+}
+
+.booking {
+    display: flex;
+}
+
+.booking img {
+    height: 72px;
+    padding-right: 199px;
+    padding-left: 189px;
+}
+
+
+/* ubicaciones*/
+.ubicación {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*guardar esto para el movil
+.carrusel-departamentos {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+
+}
+
+.carrusel-departamentos img {
+flex:  1 0 auto;
+margin:  0 50px;
+
+}
