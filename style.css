@@ -289,30 +289,6 @@ button {
     margin: 0 10px;
 }
 
-/*media query del inicio*/
-
-.carrusel-departamentos {
-    display: flex;
-    align-items: center;
-    height: auto;
-    overflow-x: scroll; /* Añadir desplazamiento horizontal en dispositivos pequeños */
-    white-space: nowrap; /* Evitar que las imágenes se coloquen una debajo de la otra */
-}
-
-.carrusel-departamentos img {
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-
-.carrusel-departamentos img:hover {
-    cursor: pointer; /* Cambiar el cursor al estilo de clic en dispositivos táctiles */
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}
 /* Estilos base para tamaños de pantalla grandes */
 #carouselExampleFade {
     max-width: 980px;
@@ -398,11 +374,6 @@ a {
         filter: contrast(100%); /* Restablecer el filtro en dispositivos móviles */
         transition: none; /* Eliminar la transición en dispositivos móviles */
     }
-}
-
-/* Media query para pantallas medianas (por ejemplo, tabletas) */
-@media screen and (max-width: 480px) {
-    /* ... (resto del código) */
 }
 /*guardar esto para el movil
 .carrusel-departamentos {
