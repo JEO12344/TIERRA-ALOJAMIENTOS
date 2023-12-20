@@ -1,230 +1,172 @@
-#carouselExampleFade {
-    max-width: 980px; 
-    margin: 49px auto; 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-.carousel-inner img {
-    width: 100%; 
-    height: 421.391px; 
-    object-fit: cover; 
+
+.departamento {
+    position: relative;
+    text-align: center;
+    max-width: 430px; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centrar el carrusel en la pantalla */
 }
 
-.carousel-inner img {
-    height: 504px;
-    }
-p {
-    font-family: 'Times New Roman', Times, serif;
+.carrusel-departamentos {
+    display: flex;
+    overflow: hidden;
+    height: 500px; /* Nuevo alto del carrusel */
 }
 
-img {
-    height: 177px;
+.carrusel-departamentos img {
+    width: auto;
+    height: 100%;
+    max-width: 100%; /* Las imágenes ocuparán el ancho completo del contenedor */
+    margin: 0 auto; /* Centrar la imagen dentro del contenedor */
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.carrusel-departamentos img.oculta {
+    display: none;
+}
+
+.servicios {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 button {
-    margin-top: 20px;
-    margin-bottom: 12px;
+    cursor: pointer;
+    background-color: black;
+    margin-bottom: 41px;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la visibilidad */
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto de transición al pasar el ratón */
+    transform: translateY(-50%);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia el color al pasar el ratón */
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .prev-btn,
+    .next-btn {
+        font-size: 18px;
+    }
 }
 
 .carousel-item p {
     background-color: black;
     color: white;
-    margin-bottom: 0px;
     text-align: center;
 }
-
-a p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
-
-.d-block {
-    height: 393px;
-}
-
-.carousel.slide.carousel-fade {
-    display: flex;
-    justify-content: center;
-    margin-top: 57px;
-    margin-bottom: 100p
-}
-
-.carousel-inner {
-    width: 981px;
-}
-
-.carousel-inner img {
-    height: 421px;
-}
-
-
-
-
-
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-    color: black;
-}
-
-.departamento {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.carrusel-departamentos {
-    display: flex;
-    align-items: center;
-    height: 430px;
-}
-
-
-.carrusel-departamentos img {
-    height: 396px;
-    width: 167px;
-    flex-grow: 1;
+/*carrucel principal*/
+#myCarousel img {
+    width: 800px;
+    height: 880px;
+    margin-top: 51px;
     object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
 }
 
-.carrusel-departamentos img:hover {
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
+#myCarousel {
+    max-width: 861px;
+    max-height: 880px;
+    margin: 0 auto;
+    overflow: hidden; /* Para recortar cualquier contenido que exceda las dimensiones del contenedor */
 }
-
-.servicios {
-    width: 839px;
-    height: 78px;
-    margin-bottom: 31px;
-}
-
-button {
-    background-color: black;
-    margin-bottom: 41px;
+/* Estilo adicional para el carrusel en dispositivos más grandes */
+@media (min-width: 768px) {
+    #myCarousel img {
+        max-height: 400px; /* Altura máxima para las imágenes en dispositivos más grandes */
+    }
 }
 
 /*informción turistica*/
 .información {
-    width: 1098px;
+    width: 100%;
+    max-width: 1098px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
 }
 
+.fondo-imagen, .fondo-imagen-1 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 10%;
+    text-align: center;
+    min-height: 200px;
+}
+
+.fondo-imagen::before, .fondo-imagen-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
 .fondo-imagen {
-    position: relative;
-    /* Para que el z-index funcione correctamente en el contenido */
-    background-image: url('../imagenes/información turistica/salta-plaza-9-julio-1536x1061.webp');
+    background-image: url(./imagenes/principal/salta-plaza-9-julio-1536x1061.webp);
     background-size: contain;
-    background-position: center;
-    color: white;
-    /* Color del texto */
-    padding: 50px;
-    /* Espaciado alrededor del contenido */
-    text-align: center;
-    min-height: 200px;
-    /* Establece una altura mínima para el contenedor */
 }
-
-.fondo-imagen::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente */
-    z-index: -1;
-    /* Coloca la capa detrás del contenido */
-}
-
 .fondo-imagen-1 {
-    position: relative;
-    /* Para que el z-index funcione correctamente en el contenido */
-    background-image: url('./imagenes/información turistica/marron.webp');
-    background-size: 374px;
-    background-position: center;
-    color: white;
-    /* Color del texto */
-    padding: 50px;
-    /* Espaciado alrededor del contenido */
-    text-align: center;
-    min-height: 200px;
-    /* Establece una altura mínima para el contenedor */
+    background-image: url(./imagenes/principal/marron.webp);
+    background-size: contain;
 }
-
-.fondo-imagen-1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente */
-    z-index: -1;
-    /* Coloca la capa detrás del contenido */
-}
-
-.fondo-imagen-1 h2 {
-    font-size: 4em;
-    margin-top: 29px;
-    color: white;
-}
-
-.fondo-imagen h2 {
-    font-size: 4em;
-    /* Tamaño de la fuente del encabezado */
-    margin-top: 29px;
-    /* Espaciado inferior del encabezado */
+.fondo-imagen h2, .fondo-imagen-1 h2 {
+    font-size: 2em;
+    margin-top: 15px;
     color: white;
 }
 
 .información p {
-    font-size: larger;
+    font-size: medium;
 }
 
 .información img {
     width: 100%;
-    /* Ocupa el ancho completo del contenedor */
-    max-width: 400px;
-    /* Establece un ancho máximo para la imagen (ajusta según tus necesidades) */
+    max-width: 100%;
     height: auto;
-    /* Permite que la altura se ajuste automáticamente */
     display: block;
     margin: 0 auto;
-    /* Centra la imagen dentro del contenedor */
-
 }
 
 
 
 /* quienes somos*/
 
-
 .presentación {
     width: 1098px;
-    /* Puedes ajustar el ancho según tus necesidades */
     margin: 0 auto;
-    /* Esto centra el div horizontalmente */
-    text-align: center;
-    /* Esto centra el texto dentro del div */
+    text-align: center;           
     padding: 20px;
-    /* Añade espacio interno al div */
 }
 
 .presentación h1 p {
@@ -237,6 +179,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 71px;
 }
 
 .premios img {
@@ -252,7 +195,6 @@ button {
     padding-right: 199px;
     padding-left: 189px;
 }
-
 
 /* ubicaciones*/
 .ubicación {
@@ -279,7 +221,12 @@ button {
 }
 .social-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;}
+.iconos {
+    text-align: justify;
+}
+iframe {
+    overflow: hidden;
 }
 .social-icons img {
     height: 50px;
@@ -332,7 +279,7 @@ a {
     .carrusel-departamentos img {
         width: 100%;
         max-width: 300px;
-        height: auto;
+        height: 100%;
     }
 }
 
@@ -369,12 +316,52 @@ a {
     .carrusel-departamentos img {
         width: 100%;
         max-width: 300px;
-        height: auto;
+        height: 100%;
         opacity: 1; /* Ajustar la opacidad en dispositivos móviles */
         filter: contrast(100%); /* Restablecer el filtro en dispositivos móviles */
         transition: none; /* Eliminar la transición en dispositivos móviles */
     }
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
 }
+}
+
+/**/
+@media (max-width: 767px) {
+    .fondo-imagen, .fondo-imagen-1 {
+        margin-top: 56px;
+    }
+
+    .fondo-imagen h2, .fondo-imagen-1 h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* quienes somos */
+@media only screen and (max-width: 768px) {
+    .presentación {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .presentación h1 p {
+        font-size: 14px;
+    }
+
+    .booking {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .booking img {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 51px;
+    }
+}
+
 /*guardar esto para el movil
 .carrusel-departamentos {
     display: flex;
