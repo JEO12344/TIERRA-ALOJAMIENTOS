@@ -82,17 +82,40 @@ button {
     text-align: center;
 }
 /*carrucel principal*/
-.custom-carousel-width {
-    max-width: 50%; /* Ajusta el porcentaje según tus necesidades */
-    margin: auto; /* Para centrar el carrusel */
-    width: 100%; /* Asegura que el carrusel ocupe el 100% del ancho en pantallas más pequeñas */
+.espacio {
+    height: 718px;
+    width: 57%; /* Ancho del 50% del contenedor padre */
+    overflow: hidden; /* Asegura que cualquier contenido que se desborde se oculte */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
   }
+  
+  #carouselExampleAutoplaying {
+    height: 100%; /* El carrusel ocupará el 100% de la altura del contenedor padre */
+  }
+  
+  .carousel-inner {
+    height: 100%; /* Los elementos internos del carrusel ocuparán el 100% de la altura del contenedor padre */
+  }
+  
+  .carousel-item {
+    height: 100%; /* Cada elemento del carrusel ocupará el 100% de la altura del contenedor padre */
+  }
+  
+  .carousel-item img {
+    object-fit: cover; /* Asegura que las imágenes se ajusten al tamaño del contenedor sin perder proporciones */
+    height: 100%; /* Asegura que las imágenes ocupen el 100% de la altura del contenedor */
+  }
+  
   @media (max-width: 768px) {
-    .custom-carousel-width {
-      max-width: none; /* Elimina el máximo ancho personalizado */
-      width: auto; /* Deja que Bootstrap maneje el ancho automáticamente */
-      margin-left: 15px; /* O cualquier otro ajuste específico que desees */
-      margin-right: 15px;
+    .espacio {
+      width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
+      height: auto;
+    }
+  }
+  @media (max-width: 932px) {
+    .espacio {
+      width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
+      height: auto;
     }
   }
 /*informción turistica*/
