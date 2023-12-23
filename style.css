@@ -77,14 +77,33 @@ button {
 }
 
 .carousel-item p {
-    background-color: black;
+    position: absolute; /* Hace que el párrafo esté posicionado de manera absoluta */
+    bottom: 0; /* Lo posiciona en la parte inferior del contenedor padre */
+    left: 0; /* Lo posiciona en el extremo izquierdo del contenedor padre */
+    width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
     color: white;
     text-align: center;
+    margin: 0; /* Elimina cualquier margen predeterminado */
+}
+@media (max-width: 768px) {
+    .carousel-item p {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
+        padding: 0px;
+    }
+}
+
+@media (max-width: 932px) {
+    .carousel-item p {
+        font-size: 16px; /* Ajusta el tamaño del texto para pantallas medianas si es necesario */
+        padding: 0px;
+
+    }
 }
 /*carrucel principal*/
 .espacio {
-    height: 718px;
-    width: 57%; /* Ancho del 50% del contenedor padre */
+    height: 753px;
+    width: 59%; /* Ancho del 50% del contenedor padre */
     overflow: hidden; /* Asegura que cualquier contenido que se desborde se oculte */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
   }
@@ -111,11 +130,39 @@ button {
       width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
       height: auto;
     }
+    .carousel-item p {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
+        padding: 0px;
+    }
   }
   @media (max-width: 932px) {
     .espacio {
       width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
       height: auto;
+    }
+    .carousel-item p {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
+        padding: 0px;
+    }
+  }
+  @media (max-width: 1025px) {
+    .espacio {
+      width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
+      height: auto;
+    }
+    .carousel-item p {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
+        padding: 0px;
+    }
+  }
+  @media (max-width: 1677px) {
+    .espacio {
+      width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
+      height: auto;
+    }
+    .carousel-item p {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
+        padding: 0px;
     }
   }
 /*informción turistica*/
