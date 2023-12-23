@@ -43,3 +43,4 @@ var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
     pause: 'hover',  // Pausa el carrusel al pasar el ratón sobre él
     wrap: true  // Hace que el carrusel se vuelva a iniciar desde la primera imagen después de llegar a la última
 });
+
