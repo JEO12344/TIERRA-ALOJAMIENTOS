@@ -185,7 +185,10 @@ button {
 
 
 /* quienes somos*/
+.quienes-somos {
+    display: flex;
 
+}
 .presentación {
     width: 1098px;
     margin: 0 auto;
@@ -219,6 +222,8 @@ button {
     padding-right: 199px;
     padding-left: 189px;
 }
+
+
 
 /* ubicaciones*/
 .ubicación {
@@ -385,7 +390,14 @@ a {
         margin-bottom: 51px;
     }
 }
+@media only screen and (max-width: 1267px) {
+    .booking {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+    }
 
+}
 /*guardar esto para el movil
 .carrusel-departamentos {
     display: flex;
