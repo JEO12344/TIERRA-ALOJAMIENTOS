@@ -20,22 +20,31 @@ body {
 .carrusel-departamentos img {
     width: auto;
     height: 100%;
-    max-width: 100%; /* Las imágenes ocuparán el ancho completo del contenedor */
-    margin: 0 auto; /* Centrar la imagen dentro del contenedor */
+    max-width: 100%;
+    object-fit: cover; /* Evita que la imagen se estire y cubre el contenedor */
+    margin: 0 auto;
 }
 
 .carrusel-departamentos img.oculta {
     display: none;
 }
 
-.servicios {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
+
+.servicio {
+    display: flex;
+    width: 10%;
+    gap: 13px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.servicio img {
+    margin: auto;
+}
 button {
     cursor: pointer;
     background-color: black;
@@ -102,69 +111,21 @@ button {
 }
 /*carrucel principal*/
 .espacio {
-    height: 753px;
-    width: 59%; /* Ancho del 50% del contenedor padre */
-    overflow: hidden; /* Asegura que cualquier contenido que se desborde se oculte */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-  }
-  
-  #carouselExampleAutoplaying {
-    height: 100%; /* El carrusel ocupará el 100% de la altura del contenedor padre */
-  }
-  
-  .carousel-inner {
-    height: 100%; /* Los elementos internos del carrusel ocuparán el 100% de la altura del contenedor padre */
-  }
-  
-  .carousel-item {
-    height: 100%; /* Cada elemento del carrusel ocupará el 100% de la altura del contenedor padre */
-  }
-  
-  .carousel-item img {
-    object-fit: cover; /* Asegura que las imágenes se ajusten al tamaño del contenedor sin perder proporciones */
-    height: 100%; /* Asegura que las imágenes ocupen el 100% de la altura del contenedor */
-  }
-  
-  @media (max-width: 768px) {
+    max-width: 812px;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+@media screen and (max-width: 999px) {
     .espacio {
-      width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
-      height: auto;
+        max-width: none;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
-    .carousel-item p {
-        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
-        padding: 0px;
-    }
-  }
-  @media (max-width: 932px) {
-    .espacio {
-      width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
-      height: auto;
-    }
-    .carousel-item p {
-        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
-        padding: 0px;
-    }
-  }
-  @media (max-width: 1025px) {
-    .espacio {
-      width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
-      height: auto;
-    }
-    .carousel-item p {
-        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
-        padding: 0px;
-    }
-  }
-  @media (max-width: 1677px) {
-    .espacio {
-      width: auto; /* Cambia a ancho completo en pantallas más pequeñas */
-      height: auto;
-    }
-    .carousel-item p {
-        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
-        padding: 0px;
-    }
-  }
+}
+
+
 /*informción turistica*/
 .información {
     width: 100%;

@@ -44,3 +44,26 @@ var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
     wrap: true  // Hace que el carrusel se vuelva a iniciar desde la primera imagen después de llegar a la última
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const carruseles = document.querySelectorAll('.carrusel-departamentos');
+
+    carruseles.forEach(function (carrusel) {
+        let currentIndex = 0;
+        const slides = carrusel.querySelectorAll('img');
+        const totalSlides = slides.length;
+
+        // Inicia el desvanecimiento para la primera imagen
+        slides[currentIndex].classList.add('visible');
+
+        // Agrega un temporizador para cambiar automáticamente las imágenes
+        setInterval(function () {
+            showNextSlide(carrusel);
+        }, 3000); // Cambia de imagen cada 3 segundos
+
+        function showNextSlide(carrusel) {
+            slides[currentIndex].classList.remove('visible');
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides[currentIndex].classList.add('visible');
+        }
+    });
+});
