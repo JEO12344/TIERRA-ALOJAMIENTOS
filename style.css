@@ -171,7 +171,9 @@ button {
 }
 
 .información p {
-    font-size: medium;
+    font-size: larger;
+    text-align: justify;
+    font-family: 'Times New Roman';
 }
 
 .información img {
@@ -199,7 +201,9 @@ button {
 .presentación h1 p {
     font-size: 16px;
     text-align: justify;
-    text-align: left;
+}
+.presentación p {
+    text-align: justify;
 }
 
 .premios {
@@ -229,6 +233,10 @@ button {
 .ubicación {
     display: flex;
     justify-content: center;
+}
+.titulo-ubicación {
+    text-align: justify;
+    font-size: larger;
 }
 
 
@@ -377,6 +385,7 @@ a {
 
     .presentación h1 p {
         font-size: 14px;
+        text-align: justify;
     }
 
     .booking {
